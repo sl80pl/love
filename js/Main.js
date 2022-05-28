@@ -38,7 +38,7 @@
 		var x = e.clientX;
 		var y = e.clientY;
 
-		createFireworks(x, y,["文慧"][Math.floor(Math.random()*3)]);
+		createFireworks(x, y,["love"][Math.floor(Math.random()*3)]);
 	}
 	document.addEventListener("mousedown", mouseDownHandler);
 
