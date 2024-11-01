@@ -67,7 +67,7 @@
 			  var second = now.getSeconds();
 			  var week = now.getDay();
 		      var weekday = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
-			  var workTime = ["7:00上，12:10下；17:00上，21:00下", "11:00上，18:10下"];
+			  var workTime = ["7:00上，12:35到家；17:00上，21:30到家", "11:00上，18:30到家"];
 			  var year = now.getFullYear();
 			  var month = now.getMonth() + 1;
 		      var day = now.getDate();
@@ -82,7 +82,7 @@
 			// 在页面中显示时间和日期
 			document.getElementById("time").innerHTML = hour + ":" + minute + ":" + second;
 			document.getElementById("date").innerHTML = year + "年" + month + "月" + day + "日 " + weekday[week];
-			document.getElementById("workTime").innerHTML = "傻妞今天："+ workTime[(dayCount%2)];
+			document.getElementById("workTime").innerHTML = "今天："+ workTime[(dayCount%2)];
    }
 
    // 每隔1秒更新时间
